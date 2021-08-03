@@ -1,0 +1,18 @@
+@use 'custom' ;
+
+//import the components :
+@use 'components/animations.scss';
+@use 'components/buttons.scss';
+@use 'components/typography.scss';
+@use 'components/mixins.scss';
+
+//import the sections :
+@use 'sections/navbar';
+@use 'sections/intro';
+@use 'sections/company';
+@use 'sections/services';
+@use 'sections/testimonials';
+@use 'sections/getStarted';
+@use 'sections/portfolio.scss';
+@use 'sections/faq';
+@use 'sections/footer';

@@ -1,0 +1,52 @@
+@use '../custom' as * ;
+@use'../components/mixins' as *;
+//call button
+.btn-rounded {
+    @include media-breakpoint-down(sm){
+        display: none;
+    }
+   position: relative;
+   font-size: 0.85rem;
+   padding: 0.9375rem 4.375rem 0.9375rem 1.25rem;
+   font-weight: 550;
+   margin: 0;
+   border: 0.1rem solid rgba($white,0.6);
+   background-color: lightyellow;
+
+   span{
+       position: absolute;
+       background-color: $primary;
+       width: 2.5rem;
+       height: 2.5rem;
+       top: 50%;
+       right: 15px;
+       transform: translateY(-50%);
+       border-radius: 50%;
+   }
+   i{
+       color: $white;
+       font-size: 1rem;
+       line-height: 2.5rem;  
+   }
+  &:hover{
+      @include gradient;
+      color:$white;
+
+      span{
+          background-color: rgba(black,0.6);
+      }
+  } 
+}
+.button-rounded{
+    @include media-breakpoint-down(sm){
+        display: none;
+    }
+   position: relative;
+   padding: 0.9rem 1.2rem 0.9rem 1.2rem;
+   border: 0.1rem solid rgba($primary,0.6);
+   background-color: lightyellow;
+   font-weight: 550;
+   margin: 0;
+   margin-top: 2%;
+   margin-bottom: 2%;
+  }

@@ -1,0 +1,26 @@
+@use'../custom' as *;
+@use'../components/mixins' as *;
+.menu {
+    @include gradient;
+
+    li {
+        padding: 0 0.7rem;
+    }
+    
+    a {
+        color: $white !important;
+        text-transform: capitalize;
+        font-family:'Trebuchet MS', Arial, sans-serif;
+        font-weight: 700;
+    }
+}
+.initials{
+    display: inline-block;
+    font-size: 1.39rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    border-radius: 3px;
+    border-color: white;
+}
